@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Exercise</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+  <!-- First and last names are text -->
+  <label for="first">First Name:</label>
+  <input id="first" type="text" name="first_name" placeholder="John"  required>
+  <label for="last">Last Name:</label>
+  <input id="last" type="text" name="last_name" placeholder="Smith" required>
+
+
+  <!-- gender is radio button -->
+  <div>
+    <label for="male">Male:</label>
+    <input id="male" type="radio" name="gender" value="m">
+    <label for="female">Female:</label>
+    <input id="female" type="radio" name="gender" value="f">
+    <label for="other">Other:</label>
+    <input id="other" type="radio" name="gender" value="o">
+  </div>
+  <!-- email and password with validation -->
+  <div>
+    <label>
+      Email:
+      <input type="email" name="email" placeholder="your email" required>
+    </label>
+    <label>
+      Password:
+      <input type="password" name="password" minlength="5" maxlength="12" required>
+    </label>
+  </div>
+
+  <!-- birthday will be three selects -->
+  <div>
+    <label>
+      Birthday
+      <select name="month">
+        <option>Month</option>
+        <option value="january">Jan</option>
+        <option value="february">Feb</option>
+        <option value="march">Mar</option>
+      </select>
+      <select name="day">
+        <option>Day</option>
+        <option>01</option>
+        <option>02</option>
+        <option>03</option>
+        <option>04</option>
+        <option>05</option>
+        <option>06</option>
+      </select>
+      <select name="year"> 
+        <option>Year</option>
+        <option>1980</option>
+        <option>1981</option>
+        <option>1982</option>
+        <option>1983</option>
+        <option>1984</option>
+        <option>1985</option>
+      </select>
+    </label>
+  </div>
+
+  <div>
+    <label for="agreed">I accept the terms and conditions</label>
+    <input id="agreed" type="checkbox" name="agreed" value="true">
+  </div>
+  
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+</body>
+</html>
