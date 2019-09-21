@@ -1,3 +1,5 @@
+/*Type Selectors*/
+
 body {
   color: red;
 }
@@ -10,6 +12,28 @@ li {
   color: orange;
 }
 
+li a {
+
+}
+
+li + a {
+
+}
+
+/*Classes, attributes, and pseudo-class selectors*/
 .friends {
   color: yellow;
+}
+
+input [type="text"] {
+
+}
+
+/*pseudo-class selectors*/
+/*a:hover
+input:checked*/
+
+/*ID selectors*/
+#hello  {
+
 }
