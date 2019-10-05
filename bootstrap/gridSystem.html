@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style type="text/css">
+      .pink {
+        background: pink;
+        border: 1px solid purple;
+      }
+    </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- divide the 12 blocks into two, each one taking 6 blocks -->
+  <div class="row">
+    <div class="col-md-6 pink">COL MD 6</div>
+    <div class="col-md-6 pink">COL MD 6</div>
+  </div>
+
+  <!-- divide the 12 blocks into 3, each one taking 4 blocks -->
+  <div class="col-md-4 pink">COL MD 4</div>
+  <div class="col-md-4 pink">COL MD 4</div>
+  <div class="col-md-4 pink">COL MD 4</div>
+
+  <!-- divide the 12 blocks into 3, two on either side taking 2
+   blocks and one in the center taking 8 -->
+  <div class="col-md-2 pink">COL MD 2</div>
+  <div class="col-md-8 pink">COL MD 8</div>
+  <div class="col-md-2 pink">COL MD 2</div>
+</div>
+
+</body>
+</html>
