@@ -8,6 +8,11 @@
         background: pink;
         border: 1px solid purple;
       }
+      .orange   {
+        background: orange;
+        border: 1px dashed red;
+        height: 50px
+      }
     </style>
 </head>
 <body>
@@ -25,10 +30,32 @@
       take up 3 blocks out of total 12. Then we want the sm size to have
       2 cells in each row, so each cell should take up 6 units from the
       total 12. -->
+
+    <!-- first block -->
+    <div class="col-md-3 col-sm-6 pink">
+      <!-- nested rows: inside a block we insert another row and start counting
+      12 block units again, but this time inside the first cell (or block) -->
+      <div class="row">
+        <div class="col-md-6 orange">FIRST HALF</div>
+        <div class="col-md-6 orange">OTHER HALF</div>
+      </div>
+    </div>
+
+    <!-- second and third blocks -->
     <div class="col-md-3 col-sm-6 pink">Tour Dates!</div>
     <div class="col-md-3 col-sm-6 pink">Tour Dates!</div>
-    <div class="col-md-3 col-sm-6 pink">Tour Dates!</div>
-    <div class="col-md-3 col-sm-6 pink">Tour Dates!</div>
+
+    <!-- fourth and last block     -->
+    <div class="col-md-3 col-sm-6 pink">
+      <div class="row">
+        <div class="col-sm-2 orange"></div>
+        <div class="col-sm-2 orange"></div>
+        <div class="col-sm-2 orange"></div>
+        <div class="col-sm-2 orange"></div>
+        <div class="col-sm-2 orange"></div>
+        <div class="col-sm-2 orange"></div>
+      </div>
+    </div>
 
     <!-- divide the 12 blocks into 3, two on either side taking 2
      blocks and one in the center taking 8 -->
