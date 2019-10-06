@@ -15,20 +15,27 @@
 <div class="container">
   <!-- divide the 12 blocks into two, each one taking 6 blocks -->
   <div class="row">
-    <div class="col-md-6 pink">COL MD 6</div>
-    <div class="col-md-6 pink">COL MD 6</div>
+<!--     <div class="col-md-6 pink">COL MD 6</div>
+    <div class="col-md-6 pink">COL MD 6</div> -->
+
+    <!-- Specify how many cells we want for each size of the screen:
+      when large (lg) is the same as medium (md) we don't need to specify
+      the large: it will copy the medium size setup. In the example below
+      the lg and md sizes will contain 4 cells, so we should set them to
+      take up 3 blocks out of total 12. Then we want the sm size to have
+      2 cells in each row, so each cell should take up 6 units from the
+      total 12. -->
+    <div class="col-md-3 col-sm-6 pink">Tour Dates!</div>
+    <div class="col-md-3 col-sm-6 pink">Tour Dates!</div>
+    <div class="col-md-3 col-sm-6 pink">Tour Dates!</div>
+    <div class="col-md-3 col-sm-6 pink">Tour Dates!</div>
+
+    <!-- divide the 12 blocks into 3, two on either side taking 2
+     blocks and one in the center taking 8 -->
+<!--     <div class="col-md-2 pink">COL MD 2</div>
+    <div class="col-md-8 pink">COL MD 8</div>
+    <div class="col-md-2 pink">COL MD 2</div> -->
   </div>
-
-  <!-- divide the 12 blocks into 3, each one taking 4 blocks -->
-  <div class="col-md-4 pink">COL MD 4</div>
-  <div class="col-md-4 pink">COL MD 4</div>
-  <div class="col-md-4 pink">COL MD 4</div>
-
-  <!-- divide the 12 blocks into 3, two on either side taking 2
-   blocks and one in the center taking 8 -->
-  <div class="col-md-2 pink">COL MD 2</div>
-  <div class="col-md-8 pink">COL MD 8</div>
-  <div class="col-md-2 pink">COL MD 2</div>
 </div>
 
 </body>
