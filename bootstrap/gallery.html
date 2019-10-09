@@ -2,8 +2,14 @@
 <html>
 <head>
   <title>Image Gallery</title>
-  <link rel="stylesheet" type="text/css" href="./gallery.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- the .css file has to be after bootstrap so it can overwrite all its styles (font colors) -->
+  <link rel="stylesheet" type="text/css" href="./gallery.css">
+
+  <!-- link the CDN for fontawesome to use the camera icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
   <!-- JQuery from the navbars lesson, for navbar functionality-->
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -45,7 +51,7 @@
 
   <div class="container">
     <div class="jumbotron">
-      <h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Image Gallery</h1>
+      <h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
       <p>A bunch of cool pictures I did not take.</p>
     </div>
 
@@ -54,12 +60,12 @@
       <div class="col-lg-4 col-sm-6">
         <!-- the thumbnail class shrinks image to the size of the column -->
         <div class="thumbnail">
-          <img src="http://i.imgur.com/qK42fUu.jpg">
+          <img src="https://images.unsplash.com/photo-1567683740738-d1fbf876b70a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=825&q=50&w=1450">
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
         <div class="thumbnail">
-          <img src="http://i.imgur.com/qK42fUu.jpg">
+          <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
