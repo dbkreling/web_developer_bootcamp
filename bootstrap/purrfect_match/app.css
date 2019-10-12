@@ -2,6 +2,8 @@ body  {
   background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3034&q=80);
   background-size: cover;
   background-position: center;
+  font-family: lato;
+  color: white;
 }
 
 html  {
@@ -11,4 +13,15 @@ html  {
 #content  {
   text-align: center;
   padding-top: 20%;
+}
+
+h1  {
+  font-weight: 700;
+  font-size: 5em;
+}
+
+hr  {
+  size: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
 }
