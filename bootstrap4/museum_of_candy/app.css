@@ -21,6 +21,11 @@ body   {
     color: #EA1C2C;
 }
 
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: 500ms;
+}
+
 #headingGroup span {
     color: #EA1C2C;
 }
